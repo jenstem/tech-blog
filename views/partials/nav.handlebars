@@ -1,1 +1,20 @@
+<nav>
+    <div>
+        <a class="navbar-brand fs-3" href="/">The Blog</a>
+        <div>
+            <a class="nav-item nav-link inline-block" href="/">Home</a>
+            {{#if loggedIn}}
+            <a class="nav-item nav-link inline-block" href="/dashboard">Dashboard</a>
+            <a class="nav-item nav-link inline-block" id="logout" href="/">Logout</a>
+            {{/if}}
+            {{#unless loggedIn}}
+            <a class="nav-item nav-link inline-block" href="/login">Dashboard</a>
+            <a class="nav-item nav-link inline-block" href="/login">Login</a>
+            {{/unless}}
+        </div>
+    </div>
+</nav>
 
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
