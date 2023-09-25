@@ -1,0 +1,17 @@
+<div>
+    <form class="edit-blog-post col-6 mx-auto mt-5">
+        <div class="mb-3">
+            <label for="blog-title" class="form-label">Post Title</label>
+            <input type="text" class="form-control" id="blog-title" value="{{blog.title}}">
+        </div>
+        <label for="blog-post" class="form-label">Post Body</label>
+        <div class="mb-3">
+            <input id="blog-post" class="form-control" value="{{post.postInfo}}">
+        </div>
+        <button type="submit" class="btn btn-info btn-sm">Save</button>
+        <button type="button" class="btn btn-info btn-sm delete-blog-btn">Delete</button>
+    </form>
+</div>
+
+<script src="/js/edit.js"></script>
+<script src="/js/delete.js"></script>
