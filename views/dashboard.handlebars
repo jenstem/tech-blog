@@ -1,0 +1,25 @@
+<div class="d-grid gap-2 col-3 mx-auto mt-5">
+    <button id="add-Blog-btn" class="btn btn-info" type="submit">Add Blog Post</button>
+</div>
+{{>post}}
+{{#each blogs as |blog|}}
+<div class="d-grid gap-2 col-6 mx-auto mt-3">
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">{{blog.title}}</h2>
+                <p class="card-text" id="blogPost-{{blog.id}}">{{blog.post}}</p>
+                <a href="/blogs/{{blog.id}}/edit" id="{{blog.id}}">
+                    <button type="submit" class="btn btn-info btn-md" role="button">Edit
+                    </button></a>
+            </div>
+            <div class="card-footer">
+                <p class="text-muted">{{blog.date_created}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+</form>
+
+<script src="/js/dashboard.js"></script>
