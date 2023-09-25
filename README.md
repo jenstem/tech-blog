@@ -83,11 +83,11 @@ This app is meant to help the user quickly and easily add/update/remove blog pos
 ## Screenshots:
 ##
 
-![](https://github.com/jenstem/e-commerce-backend/blob/main/assets/get-img.png) <br>
+![](https://github.com/jenstem/tech-blog/blob/main/public/assets/login.png) <br>
 *This is a screenshot of the login page*
 ##
 
-![](https://github.com/jenstem/e-commerce-backend/blob/main/assets/post-img.png) <br>
+![](https://github.com/jenstem/tech-blog/blob/main/public/assets/blogpost.png) <br>
 *This is a screenshot of how a blog post looks*
 ##
 
@@ -106,6 +106,6 @@ I also received help on creating the unique id's from BCS Learning Assistants.
 
 I borrowed and changed code for my handlebars files from [StackOverflow.com](https://stackoverflow.com/questions/10736907/handlebars-js-else-if).
 
-I borrowed and changed code for my css file from [w3schools.com](https://www.w3schools.com/cssref/css_inherit.php).
+I borrowed code for my css file from [w3schools.com](https://www.w3schools.com/cssref/css_inherit.php).
 
 I borrowed and changed code for my model files from [StackOverflow.com](https://stackoverflow.com/questions/40694689/set-defaultvalue-to-todays-date-in-a-sequelize-migration).
