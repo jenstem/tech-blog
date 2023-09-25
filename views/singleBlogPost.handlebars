@@ -1,0 +1,46 @@
+<div>
+<div class="col-6 mx-auto">
+  <h3 class="text-center mt-5">Blog Post</h3>
+  <div class="card h-100">
+    <div class="card-body">
+      <h2 class="card-title">{{blog.title}}</h2>
+      <p class="card-text" id="blogPost-{{blog.id}}">{{blog.post}}</p>
+    </div>
+    <div class="card-footer">
+      <p class="text-muted">Username: {{blog.user.username}}</p>
+      <p class="text-muted">Date: {{blog.date_created}}</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="comment-card col-6 mx-auto">
+  <h3 class="text-center">Comments</h3>
+
+  {{#each blog.comments as |comment|}}
+  <div class="card h-100">
+    <div class="card-body">
+      <p class="card-text">{{comment.body}}</p>
+    </div>
+    <div class="card-footer">
+      <p class="text-muted">Username: {{comment.user.username}}</p>
+      <p class="text-muted">Date: {{comment.date_created}}</p>
+      {{#if comment.can_delete}}
+      <button type="button" class="btn btn-info btn-sm delete-comment-btn" value="{{comment.id}}">Delete</button>
+      {{/if}}
+    </div>
+  </div>
+  {{/each}}
+  {{#if loggedIn}}
+  <form class="comment-form col-11 mx-auto">
+    <div class="mb-3">
+      <label for="comment" class="form-label">Add your comment:</label>
+      <textarea type="textarea" class="form-control" id="comment"></textarea>
+    </div>
+    <div class="col-2 mx-auto">
+      <button type="submit" class="btn btn-info btn-md">Save</button>
+    </div>
+  </form>
+  <script src="/js/comment.js"></script>
+  {{/if}}
+</div>
