@@ -1,0 +1,17 @@
+{{#each blogs as |blog| }}
+<div class="d-flex flex-wrap justify-content-center row row-cols-sm-2 m-3">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="card-title">{{blog.title}}</h2>
+        <p class="class-text" id="blogPost-{{blog.id}}"></p>
+          <a href="/blogs/{{blog.id}}" id="{{blog.id}}" class="btn btn-info" role="button"
+          data-bs-toggle="button">Click to read more</a>
+      </div>
+      <div class="card-footer">
+        <p class="text-muted">{{blog.date_created}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
