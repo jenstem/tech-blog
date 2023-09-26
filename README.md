@@ -100,9 +100,9 @@ GitHub URL:  https://github.com/jenstem
 <a id='notes'></a>
 ## Notes:
 
-I received help on the server.js file and all of the routes files from a tutor, [Scott Everett](https://calendly.com/fsf-tutor-team/scott-everett?month=2023-06).
+I received help on most files from a tutor, [Scott Everett](https://calendly.com/fsf-tutor-team/scott-everett?month=2023-06).
 
-I also received help on creating the unique id's from BCS Learning Assistants.
+I also received help from BCS Learning Assistants.
 
 I borrowed and changed code for my handlebars files from [StackOverflow.com](https://stackoverflow.com/questions/10736907/handlebars-js-else-if).
 
