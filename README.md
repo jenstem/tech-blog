@@ -67,7 +67,7 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 <a id='installation'></a>
 ## Installation
 There is no need to install anything, please use the link to the deployed app.\
-[The Blog](#)
+[The Blog](https://fast-brook-86367-d21f795e7f85.herokuapp.com/)
 ##
 
 <a id='usage'></a>
